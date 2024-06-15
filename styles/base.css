@@ -251,6 +251,9 @@ footer p{
 
     /* menu style mobile view*/
     .menu {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
         padding: 10px; 
     }
 
