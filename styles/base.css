@@ -254,7 +254,10 @@ footer p{
         display: flex;
         flex-direction: column;
         row-gap: 10px;
-        padding: 10px; 
+        padding: 10px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .menu a {
