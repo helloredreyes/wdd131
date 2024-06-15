@@ -129,6 +129,7 @@ body {
 
 #about-text {
     display:flex;
+    max-width: 100%;
     align-items: stretch;
     flex-direction: row;
     justify-content: center;
