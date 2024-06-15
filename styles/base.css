@@ -66,11 +66,14 @@ body {
 
 .myheader {
     background-color: #d1b494;
+    padding: 0;
+    margin: 0;
 }
 .myheader h1 {
     font-size: 20pt;
     text-align: center;
     padding-top: 50px;
+    margin: 0;
 }
 
 .myheader p{
