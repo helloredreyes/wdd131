@@ -260,7 +260,7 @@ footer p{
 @media (max-width: 768px){
 /* header style mobible view */
     .menu a {
-        width: 30%;
+        width: 40%;
         font-size: 9pt;
     }
 
