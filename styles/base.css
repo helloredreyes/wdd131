@@ -63,10 +63,14 @@ body {
 }
 
 /* header style */
+
+.myheader {
+    background-color: #d1b494;
+}
 .myheader h1 {
     font-size: 20pt;
     text-align: center;
-    padding: 50px;
+    padding-top: 50px;
 }
 
 .myheader p{
