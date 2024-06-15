@@ -66,12 +66,12 @@ body {
 .myheader h1 {
     font-size: 20pt;
     text-align: center;
-    padding-top: 50px;
+    padding: 50px;
 }
 
 .myheader p{
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 /* menu style */
