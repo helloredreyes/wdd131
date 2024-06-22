@@ -16,5 +16,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const formattedDateTime = new Intl.DateTimeFormat("en-US", options).format(today);
 
-  full.innerHTML = `LAST MODIFIED ON: <span class="highlight">${formattedDateTime}</span>`;
+  full.innerHTML = `Last Modificiation: <span class="highlight">${formattedDateTime}</span>`;
 });
