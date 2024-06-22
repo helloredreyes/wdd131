@@ -3,7 +3,7 @@ body{
 }
 
 header, main, footer{
-    max-width: 640px;
+    max-width: 7200px;
     margin: 20px auto;
     border: 1px solid #5a4a39;
     padding: 20px;

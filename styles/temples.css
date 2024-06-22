@@ -1,0 +1,65 @@
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+        background-color: #f8f8f8;
+    }
+
+    header h1 {
+        flex: 0 0 60%;
+        font-size: 28pt;
+    }
+    
+    header nav {
+        flex: 0 0 40%;
+    }
+
+    header .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 3em;
+        font-weight: bolder;
+        color:darkslategray;
+        cursor: pointer;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav.menu-open {
+        display: flex;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav a {
+        padding: 1em;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #ccc;
+    }
+
+    main .figures {
+        display: block;
+    }
+
+    figure {
+        margin-bottom: 1em;
+    }
+
+    footer p{
+        font-size: 9pt;
+    }
+}

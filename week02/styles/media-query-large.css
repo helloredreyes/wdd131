@@ -3,11 +3,11 @@ body{
 }
 
 header, main, footer{
-    min-width: 500px;
+    max-width: 1020px;
     margin: 20px auto;
     border: 1px solid #5a4a39;
     padding: 20px;
-    background-color: #cdd5e4;
+    background-color: #dbe7fe;
 }
 
 main{
@@ -18,5 +18,4 @@ main{
 
 section{
     padding: 1rem;
-    background-color: #ffffff;
 }
