@@ -1,60 +1,43 @@
-/* import font */
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-
-
-.playfair-display {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-}
-
-.cormorant-garamond-light {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 300;
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
     font-style: normal;
   }
   
+.crimson-text-regular {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/* font style + color + size */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "DM Serif Text", serif;
+    color:#000000;
+}
+h3, h5, p, a{
+    font-family: "Crimson Text", serif;
+    font-size: 11pt;
+    letter-spacing: 0.5pt;
+    line-height: 2cap;
+    color:#000000;
 
-/* text color presets */
+}
+h1 {
+    font-size: 20pt;
+}
+h2, h4, h6{
+    font-size: 16pt;
+    letter-spacing: 2pt;
+}
+  /* text color presets */
 :root {
     --primary-color: #ffffff;
     --secondary-color: #cda478C;
     --accent1-color: #383838;
 }
-
-/* font style + color + size */
-h1,h2,h3,h4,h5, p, a {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    letter-spacing: 1.2pt;
-    line-height: 160%;
-    text-decoration: none;
-}
-
-h2 {
-    font-size: 18pt;
-}
-h3 {
-    font-size: 16pt;
-}
-
-h4 {
-    font-size: 14pt;
-}
-
-h5{
-    font-size: 12pt;
-}
-
-p{
-    font-size: 10pt;
-    font-family: "Cormorant Garamond", serif;
-
 /* body background */
-}
+
 html,
 body {
     background-color:#ffffff ;
@@ -63,34 +46,41 @@ body {
 }
 
 /* header style */
-
+*{
+    padding: 0;
+    margin: 0;
+}
 .myheader {
     background-color: #d1b494;
     max-width: 100%;
-    padding: 0;
-    margin: 0;
 }
 .myheader h1 {
     font-size: 20pt;
     text-align: center;
-    padding-top: 50px;
-    margin: 0;
+    padding: 20px;
 }
 
+.green-text {
+    color: rgb(180, 130, 106);
+}
+h1 {
+    color: black;
+    color: var(--main-text-color, black);
+}
 .myheader p{
     text-align: center;
     padding-bottom: 50px;
 }
 
 /* menu style */
-.menu {
+.navigation {
     display: flex;
     justify-content: space-around; 
     background-color:#000000;
     padding: 10px; 
 }
 
-.menu a {
+.navigation a {
     color: white;
     text-decoration: none; 
     padding: 10px 15px;
@@ -103,283 +93,123 @@ body {
     font-size: 10pt;
 }
 
-.menu a:hover {
+.navigation a:hover {
     background-color:#cda478;
     color: #000000;
     text-decoration: overline;
 }
 
-.menu a:active {
+.navigation a:active {
     color:#cda478;
     background-color: rgb(85, 59, 29);
 }
 
-/* week1 card 1 and 2 */
 
-#card1n2 {
+/* week1 about + resources*/
+#about{
     display: flex;
     max-width: 100%;
-    flex-direction: row;
-    margin: 0;
-    padding: 10px;
-    column-gap: 10px;
+    padding: 20px;
+    column-gap: 20px;
+    border-style: ;
 }
-/* section 1 about me*/
-
-.card1 {
-    width: 65%;
-    background-color: #383333;
-    border-width: 1pt;
-    border-style: solid;
-    border-color:#cda478;
+.about-me{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    border-style:solid;
+    border-color: #cda478;
+    border-radius: 3px;;
 }
-/* CARD 1 */
-.card1 h2{
-    background-color:#ffffff;
-    padding: 10px;
-    margin: 0;
+.about-me h2{
     text-align: center;
+    padding: 20px 0;
+    background-color: #d1b494;
 }
-/* intro + image in one row */
-
-#about-text {
-    display:flex;
+#introduction{
+    display: flex;
     max-width: 100%;
+    float: row;
+    column-gap: 20px;
     align-items: stretch;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
     padding: 30px;
-    column-gap: 30px;
-}
-
-#about-text p {
-    width: 65%;
-    color: #ffffff;
+    align-content: center;
+    align-items: center;
     text-align: justify;
-    margin: 0;
 }
-
-#about-text img {
-    width: 20%;
-    object-fit: cover;
-    height: 100%;
+.introtext{
+    width: 85%;
+}
+.introimg{
+    width: 15%;
+}
+.introimg img{
+    width: 100%;
+    aspect-ratio: 2 / 3;
+}
+/* country */
+#about-my-country{
+    flex-direction: row;
+    display: flex;
+    max-width: 100%;
+    float: row;
+    column-gap: 20px;
+    align-items: stretch;
+    padding: 20px;
+    align-content: center;
+    align-items: center;
+    text-align: justify;
+}
+#mycountry{
+    padding: 0 30px;
+}
+#mycountry h4{
+    text-align: center;
+    padding: 30px 0;
+}
+.flag{
+    width: 15%;
+}
+.flag img{
+    width: 100%;
+}
+.philippines{
+    width: 85%;
+}
+.philippines h5{
+    text-align: justify;
+}
+/* resources */
+.resources {
+    width: 30%;
+    border-style:solid;
+    border-color: #cda478;
+    border-radius: 3px;;
+}
+#resources-list {
+    text-align: center;
+    max-width: 100%;
+    background-color: #d1b494;
+}
+#resources-list h6{
+    padding: 20px 0;
+}
+#my-resources {
+    height:100%;
+    align-content: center;
+}
+.resource-url {
+    display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    height: 100%;
 }
-
-
-#country h3{
+footer{
+    background-color: #000000;
+    padding: 20px 0;
     text-align: center;
-    color: #ffffff;
-
-}
-
-#aboutcountry {
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-    max-width: 100%;
-    padding: 30px;
-    column-gap: 30px;;
-}
-
-#aboutcountry img {
-    width: 35%;
-    object-fit: cover; 
-}
-
-#aboutcountry p {
-    width: 65%;
-    color: #ffffff;
-    text-align: justify;
-    margin: 0;
-}
-
-/* end of card 1 */
-
-/* CARD 2 */
-
-.card2{
-    width: 35%;
-    background-color:#ffffff;
-    border-width: 1pt;
-    border-style: solid;
-    border-color:#cda478;
-}
-
-.card2 h2{
-    background-color: #383838;
-    color: #ffffff;
-    padding: 10px;
-    margin: 0;
-    text-align: center;
-}
-
-#resources {
-    display: flex;
-    justify-content: left; 
-    align-items: center; 
-    height: 100vh;
-}
-
-#resources nav ul li a {
-    text-decoration: none;
-    color: #000;
-    line-height: 40pt;
-}
-
-/* footer */
-footer {
-    background: #000000;
-    padding: 20px;
 }
 footer p{
-    text-align: center;
-    color:#cda478;
-}
-
-/* date */
-
-#currentyear p{
-    margin: 0.25rem;
-    padding: 0.5rem 0.75rem;
-    color:#ababab;
-    font-size: 8pt;
-}
-
-.highlight {
-    color: rgb(245, 245, 245);
-    font-family:'Courier New', Courier, monospace;
-    font-size: 8pt;
-}
-
-/* MOBILE VIEW */
-
-@media (max-width: 768px){
-/* header style mobible view */
-    .menu a {
-        width: 40%;
-        font-size: 9pt;
-    }
-
-    .myheader h1 {
-        font-size: 13pt;
-        padding-top: 20px;
-    }
-
-    .myheader p{
-        font-size: 8pt;
-    }
-
-    /* menu style mobile view*/
-    .menu {
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-        padding: 10px;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* week1 card 1 and 2 mobile view*/
-
-    #card1n2 {
-        flex-direction: column;
-        margin: 0;
-        padding: 10px;
-        row-gap: 20px;
-    }
-
-    /* section 1 about me mobile view*/
-    .card1 {
-        width: 100%;
-    }
-    /* CARD 1 */
-    .card1 h2{
-        background-color:#ffffff;
-        padding: 10px;
-        margin: 0;
-        text-align: center;
-        font-size: 12pt;
-    }
-    /* intro + image in one row mobile view*/
-
-    #about-text {
-        flex-direction: column;
-        row-gap: 20px;
-    }
-
-    #about-text p {
-        width: 100%;
-    }
-
-    #about-text img {
-        width: 100%;
-        object-fit: cover;
-        aspect-ratio: 2 / 2;
-    }
-
-    /* about country mobile view */
-    #country{
-        display: flex;
-        max-width: 100%;
-        flex-direction: column;
-    }
-    #country h3{
-        font-size: 12px;;
-
-    }
-
-    #aboutcountry{
-        display: flex;
-        max-width: 100%;
-        flex-direction: column;
-        row-gap: 20px;
-    }
-
-    #aboutcountry img {
-        width: 100%;
-        object-fit:inherit; 
-    }
-
-    #aboutcountry p {
-        width: 100%;
-        color: #ffffff;
-    }
-
-    /* end of card 1 */
-
-    /* CARD 2 */
-
-    .card2{
-        width: 100%;
-    }
-
-    .card2 h2{
-        font-size: 12pt;
-    }
-
-    #resources {
-        justify-content: center;
-
-    }
-
-    #resources nav ul li a {
-        text-decoration: none;
-        color: #000;
-        line-height: 40pt;
-        font-size: 9pt;
-    }
-
-    /* footer mobile view */
-    footer {
-        padding: 10px;
-    }
-    footer p{
-        font-size: 7pt;
-        padding: 10px;
-    }
+    color:white;
+    padding-bottom: 5px;
 }
