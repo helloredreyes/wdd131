@@ -111,7 +111,7 @@ h1 {
     max-width: 100%;
     padding: 20px;
     column-gap: 20px;
-    border-style: ;
+
 }
 .about-me{
     display: flex;
@@ -129,7 +129,7 @@ h1 {
 #introduction{
     display: flex;
     max-width: 100%;
-    float: row;
+    flex-direction: row;
     column-gap: 20px;
     align-items: stretch;
     padding: 30px;
@@ -152,7 +152,6 @@ h1 {
     flex-direction: row;
     display: flex;
     max-width: 100%;
-    float: row;
     column-gap: 20px;
     align-items: stretch;
     padding: 20px;
