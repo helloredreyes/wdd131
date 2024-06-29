@@ -16,14 +16,14 @@ header {
     max-width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: #bbc3ca;
+    background-color: #d1eaff;
     padding: 30px;
 }
 
 header h1 {
     flex: 0 0 30%;
     margin: 0;
-    color: darkcyan;
+    color:#223d4e;
 }
 
 header nav {
@@ -87,12 +87,12 @@ img{
 }
 
 footer{
-    background-color: #6cb5f9;
+    background-color: #d1eaff;
     padding: 20px 0;
     text-align: center;
 }
 footer p{
-    color:white;
+    color:#223d4e;
 }
 
 .red-text {
