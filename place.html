@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album</title>
-    <meta name="description" content="WDD131 - Dynamic Web Fundamentals - Temple Album">
+    <title>Place | WDD131 - Dynamic Web Fundamentals</title>
+    <meta name="description" content="Place | WDD131 - Dynamic Web Fundamentals - Temple Album">
     <meta name ="author" content="Rhea June Reyes">
     <!-- styles -->
+    <link rel="stylesheet" href="styles/place-large.css">
     <link rel="stylesheet" href="styles/place.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,11 +19,39 @@
 </head>
 <body>
     <header>
+        <h1>THE PHILIPPINES</h1>
     </header>
 
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="philippine eagle.webpp" media="(min-width: 1024px)">
+                <source srcset="philippine eagle.webp" media="(min-width: 768px)">
+                <img src="images/philippine eagle.webp" alt="Hero Image">
+            </picture>
+        </div>
+        <!-- data value -->
+        <div class="data">
+            <h1>Data</h1>
+            <p><span class="label">Label</span><span class="colon">:</span><span class="value">Value</span></p>
+            <p><span class="label">Label</span><span class="colon">:</span><span class="value">Value</span></p>
+            <p><span class="label">Label</span><span class="colon">:</span><span class="value">Value</span></p>
+            <p><span class="label">Label</span><span class="colon">:</span><span class="value">Value</span></p>
+            <p><span class="label">Label</span><span class="colon">:</span><span class="value">Value</span></p>
+            <p><span class="label">Label</span><span class="colon">:</span><span class="value">Value</span></p>
+        </div>
+        <!-- wind chill -->
+        <div class="weather">
+            <section id="title">
+                        <h1>Weather</h1>
+                        <img src="images/weather.svg">
+                    </section>
+            <p><span class="label">Temperature</span><span class="colon">:</span><span class="value">25°C</span></p>
+            <p><span class="label">Wind Speed</span><span class="colon">:</span><span class="value">10 km/h</span></p>
+            <p><span class="label">Wind Chill</span><span class="colon">:</span><span class="value">N/A</span></p>
+        </div>
     </main>
-
+    
     <footer>
         <p>©2024 Rhea June Reyes | The Philippines</p>
         <div id="currentyear">
