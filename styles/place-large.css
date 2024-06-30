@@ -63,13 +63,13 @@ header h1 {
 }
 
 .data {
-    top: 130px;
+    top: 20%;
     left: 20px;
     width: 15%;
 }
 
 .weather {
-    bottom: -150px;
+    bottom: -60%;
     right: 20px;
     width: 15%;
 }
