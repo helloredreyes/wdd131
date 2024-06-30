@@ -188,7 +188,7 @@ footer p {
     }
 
     .weather {
-        margin-top: 20px;
+        margin: 20px;
         display: flex;
         flex-direction: column;
     }
@@ -238,9 +238,11 @@ footer p {
     footer {
         padding: 20px 0;
         margin: 0;
+        background-color: #ffbb00;
     }
 
     footer p {
-        font-size: 9pt;
+        font-size: 7pt;
+        font-weight: 500;
     }
 }
