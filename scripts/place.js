@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Display current year in footer
     var currentYear = new Date().getFullYear();
-    document.getElementById('currentYear').textContent = currentYear;
+    document.getElementById('currentyear').textContent = currentYear;
 
     // Display last modified date in footer
     var lastModified = document.lastModified;
-    document.getElementById('lastModified').textContent = lastModified;
+    document.getElementById('datetimemodified').textContent = lastModified;
 });
