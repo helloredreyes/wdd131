@@ -67,19 +67,12 @@ main .figures {
     gap: 2em;
 }
 
-figure {
-    margin: 0;
-    text-align: center;
-}
 
-figcaption {
-    margin-top: 0.5em;
-}
-
-img{
+.figures img {
     width: 100%;
     height: auto;
     aspect-ratio: 4 / 3 ;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .menu-toggle{

@@ -51,12 +51,15 @@
     }
     main .figures {
         display: block;
-        font-size: 10pt;
-        text-align: center;
     }
-
-    .figures img {
-        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+    .temple-card{
+        padding-bottom: 20px;
+    }
+    .temple-card h3{
+        font-size: 10pt;
+    }
+    .temple-card p{
+        font-size: 8pt;
     }
 
     footer p{
