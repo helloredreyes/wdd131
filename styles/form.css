@@ -1,0 +1,161 @@
+body {
+    font-family: 'Shippori Mincho', serif;
+    line-height: 1.6;
+    margin: 50px;
+    padding: 0;
+    background: #ffffff;
+    border-width: 1pt;
+    border-style: solid;
+    border-color: #333;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 22pt
+}
+header, footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+header{
+    margin-bottom:50px;
+}
+footer {
+    margin-top: 50px;
+}
+main {
+    padding: 50px;
+    max-width: 50%;
+    margin:auto;
+    background: #f0f0f0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+label, legend {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 20px;
+    font-size: 12pt;
+}
+
+input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 30px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #555;
+}
+
+.rating-fieldset {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rating-option label {
+    font-size: 12pt;
+    margin-bottom: 20px;
+}
+
+footer p{
+    font-size: 11pt;
+}
+
+/* mobile view */
+@media (max-width: 768px){
+    body {
+        margin: 20px;
+        padding: 0;
+    }
+    
+    h1{
+        font-size: 15pt
+    }
+    header{
+        margin-bottom:20px;
+    }
+    footer {
+        margin-top: 20px;
+    }
+    main {
+        padding: 20px;
+        margin:auto;
+        max-width: 100%;
+        background: #f0f0f0;
+    }
+    
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    label, legend {
+        font-weight: bold;
+    }
+    
+    input, select, textarea {
+        padding: 20px;
+        font-size: 10pt;
+    }
+    
+    input[type="submit"] {
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 20px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background: #555;
+    }
+    
+    .rating-fieldset {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        align-content:center;
+    }
+    
+    .rating-option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .rating-option label {
+        font-size: 10pt;
+        margin-bottom: 20px;
+    }
+
+    footer p{
+        font-size: 8pt;
+    }
+}
